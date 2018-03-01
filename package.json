@@ -1,0 +1,37 @@
+{
+  "name": "minamo",
+  "version": "0.1.0",
+  "author": "Mitu217 <mtksk.26884um@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build-web": "webpack --config webpack.config.js",
+    "watch-web": "webpack-dev-server --hot --inline",
+    "build-native": "tsc",
+    "watch-native": "tsc --watch",
+    "start": "react-native start --skipflow",
+    "android": "react-native run-android",
+    "ios": "react-native run-ios"
+  },
+  "devDependencies": {
+    "@types/react": "^16.0.38",
+    "@types/react-dom": "^16.0.4",
+    "@types/react-native": "^0.52.16",
+    "@types/react-redux": "^5.0.15",
+    "html-webpack-plugin": "^3.0.4",
+    "react-dom": "^16.2.0",
+    "react-native-cli": "^2.0.1",
+    "ts-loader": "^4.0.0",
+    "typescript": "^2.7.2",
+    "webpack": "^4.0.0",
+    "webpack-cli": "^2.0.9",
+    "webpack-dev-server": "^3.1.0"
+  },
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-native": "^0.54.0",
+    "react-redux": "^5.0.7",
+    "redux": "^3.7.2",
+    "redux-saga": "^0.16.0"
+  }
+}

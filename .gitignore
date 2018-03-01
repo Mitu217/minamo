@@ -1,28 +1,54 @@
-#OS files
+# OSX
+#
 .DS_Store
 
-# Editor files
-/.idea
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-**.swp
-*.sw*
+# Xcode
+#
+build/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+*.xccheckout
+*.moved-aside
+DerivedData
+*.hmap
+*.ipa
+*.xcuserstate
+project.xcworkspace
 
-# Logs
-logs
-*.log
+# Android/IntelliJ
+#
+build/
+.idea
+.gradle
+local.properties
+*.iml
 
-# Dependencies
-node_modules
+# node.js
+#
+dist/
+node_modules/
+npm-debug.log
+yarn-error.log
 
-# Distribution
-dist
+# BUCK
+buck-out/
+\.buckd/
+*.keystore
 
-# Runtime data
-.cache
-pids
-*.pid
-*.seed
-*.pid.lock
+# fastlane
+#
+# It is recommended to not store the screenshots in the git repo. Instead, use fastlane to re-generate the
+# screenshots whenever they are needed.
+# For more information about the recommended setup visit:
+# https://docs.fastlane.tools/best-practices/source-control/
+
+*/fastlane/report.xml
+*/fastlane/Preview.html
+*/fastlane/screenshots
