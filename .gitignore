@@ -14,4 +14,4 @@
 *.out
 
 # dep
-/vendor/
+vendor/
