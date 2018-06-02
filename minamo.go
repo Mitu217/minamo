@@ -1,16 +1,15 @@
-package main
+package minamo
 
 import (
 	"io"
-	"log"
 	"os"
 
 	"github.com/hajimehoshi/go-mp3"
 	"github.com/hajimehoshi/oto"
 )
 
-func run() error {
-	f, err := os.Open("sample.mp3")
+func Play(path string) error {
+	f, err := os.Open(path)
 	if err != nil {
 		return err
 	}
@@ -35,8 +34,6 @@ func run() error {
 	return nil
 }
 
-func main() {
-	if err := run(); err != nil {
-		log.Fatal(err)
-	}
+func Hello() string {
+	return "Hello, world!"
 }
