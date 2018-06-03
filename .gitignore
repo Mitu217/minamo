@@ -13,5 +13,12 @@
 # Output of the go coverage tool, specifically when used with LiteIDE
 *.out
 
+# MaxOSX
+.DS_Store
+
 # dep
 vendor/
+
+# yarn
+node_modules/
+dist/
