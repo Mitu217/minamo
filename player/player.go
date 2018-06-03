@@ -1,4 +1,4 @@
-package minamo
+package player
 
 import (
 	"io"
