@@ -19,6 +19,6 @@
 # dep
 vendor/
 
-# yarn
+# npm
 node_modules/
 dist/
