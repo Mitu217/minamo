@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja" class="fill">
+	<head>
+		<meta charset="utf8">
+		<title>Electron with TypeScript</title>
+		<link href="./vendors/normalize-5.0.0.min.css" rel="stylesheet">
+		<link href="./css/style.css" rel="stylesheet">
+		<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+	</head>
+	<body class="fill">
+		<div id="main" class="fill bc-1 flex column">
+			<div class="fill-x h-1 bc-2 grow-fix flex">
+				<div class="wh-1 grow-fix flex centering" @click="back"><i class="fa fa-arrow-left"></i></div>
+				<div class="wh-1 grow-fix flex centering" @click="forward"><i class="fa fa-arrow-right"></i></div>
+				<div class="wh-1 grow-fix flex centering" @click="reload"><i class="fa fa-redo"></i></div>
+				<div class="wh-1 grow-flex flex centering"><input type="search" class="fill-x h-hq less" @keyup.enter="load" v-model="text" autocomplete="on"></div>
+			</div>
+			<webview class="fill-x h-1 grow-flex" src="" @dom-ready="preload" @did-start-loading="preload" @keyup.ctrl.73="openDevTools"></webview>
+		</div>
+		<script src="./js/bundle.js"></script>
+	</body>
+</html>

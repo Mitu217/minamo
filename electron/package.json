@@ -1,0 +1,23 @@
+{
+  "name": "minamo",
+  "version": "0.0.1",
+  "license": "MIT",
+  "description": "contents browser with electron",
+  "repository": "https://github.com/Mitu217/minamo",
+  "main": "dist/index.js",
+  "dependencies": {},
+  "scripts": {
+    "build": "tsc",
+    "start": "npm run build && electron dist",
+    "bundle": "webpack --progress --colors --display-error-details --mode development",
+    "watch": "webpack --progress --colors --display-error-details --mode development --watch"
+  },
+  "devDependencies": {
+    "electron": "^2.0.2",
+    "ts-loader": "^4.0.1",
+    "typescript": "^2.7.2",
+    "vue": "^2.5.14",
+    "webpack": "^4.1.1",
+    "webpack-cli": "^2.0.11"
+  }
+}
